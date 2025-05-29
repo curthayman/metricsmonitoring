@@ -64,6 +64,11 @@ python metricsmonitoring.py --day
 ```
 ## 📝 Notes
 When you run this script, it will create a metricsmonitoring.log file that you can use for debugging or just info when it runs.
+- When running under cron, the TERMINUS_COMMAND entry might be required. Here is an example below:
+```bash
+TERMINUS_COMMAND=/usr/local/bin/terminus
+```
+You may need to adjust that to your path if you running crons
 
 ## 🚨 Alerts
 Slack alerts include:
