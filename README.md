@@ -71,6 +71,11 @@ TERMINUS_COMMAND=/usr/local/bin/terminus
 You may need to adjust that to your path if you running crons
 
 Included in this repo is a **.env.example** file and a **example.sites.yaml** file. Just rename the **.env.example** file to **.env** and the **example.sites.yaml** file to **sites.yaml** and put your own Webhook and sites in.
+Make sure you are running a virtual enviroment to run commands like (`pip install -r requirements.txt`). You can run this command if you are on any Linux based platform:
+
+```bash
+python3 -m venv venv && source venv/bin/activate'
+```
 
 ## 🚨 Alerts
 Slack alerts include:
