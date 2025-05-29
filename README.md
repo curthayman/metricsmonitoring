@@ -29,13 +29,21 @@
    ```bash
    pip install -r requirements.txt
 
-## configure environment variables
+## Configure environment variables
 Create a **.env** file with your Slack webhook URL:
 
 **SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...**
 
 ## Configure monitored sites
-- Edit sites.yaml to list your Pantheon site names and thresholds.
+- Edit **sites.yaml** to list your Pantheon site names and thresholds.
+
+Should look like this when you setup your sites.yaml file:
+
+threshold_percent: 25
+sites_to_monitor:
+  - site1
+  - site2
+  - site3
 
 Ensure Terminus is installed and accessible, if not run this command:
 ```bash
