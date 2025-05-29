@@ -37,7 +37,7 @@ Create a **.env** file with your Slack webhook URL:
 ## Configure monitored sites
 - Edit **sites.yaml** to list your Pantheon site names and thresholds.
 
-Should look like this when you setup your sites.yaml file:
+Should look like this when you setup your sites.yaml file, I have also inlucded an example file as well. (_example.sites.yaml_):
 ```bash
 threshold_percent: 25
 sites_to_monitor:
