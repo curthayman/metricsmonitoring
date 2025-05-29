@@ -62,6 +62,8 @@ Or for daily metrics:
 ```bash
 python metricsmonitoring.py --day
 ```
+## 📝 Notes
+When you run this script, it will create a metricsmonitoring.log file that you can use for debugging or just info when it runs.
 
 ## 🚨 Alerts
 Slack alerts include:
@@ -70,3 +72,11 @@ Slack alerts include:
 - Traffic anomaly detection
 - Cache efficiency with historical trends and actionable advice
 - Direct link to the Pantheon dashboard
+
+## 🏆 Credits
+- Curt Hayman
+- Terminus
+- pandas
+- requests
+- pyyaml
+- python-dotenv
