@@ -1,0 +1,7 @@
+threshold_percent: 25
+sites_to_monitor:
+  - sites1
+  - sites2
+  - sites3
+  - sites4
+  - sites5
