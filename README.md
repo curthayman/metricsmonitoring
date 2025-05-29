@@ -13,7 +13,7 @@
 
 - Python 3.7+
 - [Terminus CLI](https://pantheon.io/docs/terminus)
-- Slack webhook URL
+- [Slack webhook URL](https://api.slack.com/messaging/webhooks)
 
 **Python dependencies** (install with `pip install -r requirements.txt`):
 
