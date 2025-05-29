@@ -38,13 +38,13 @@ Create a **.env** file with your Slack webhook URL:
 - Edit **sites.yaml** to list your Pantheon site names and thresholds.
 
 Should look like this when you setup your sites.yaml file:
-
+```bash
 threshold_percent: 25
 sites_to_monitor:
   - site1
   - site2
   - site3
-
+```
 Ensure Terminus is installed and accessible, if not run this command:
 ```bash
 terminus auth:login
