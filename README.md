@@ -30,7 +30,7 @@
    pip install -r requirements.txt
 
 ## Configure environment variables
-Create a **.env** file with your Slack webhook URL:
+Create a **.env** file with your Slack webhook URL. There is an example file for this as well, called (_.env.example_):
 
 **SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...**
 
