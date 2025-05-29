@@ -2,14 +2,14 @@
 
 **metricsmonitoring.py** is a Python script for monitoring Pantheon site metrics, detecting traffic anomalies, and alerting on low cache efficiency. It sends detailed, actionable Slack notifications to help you quickly identify and address performance issues.
 
-## Features
+## 📰 Features
 
 - Monitors multiple Pantheon sites for traffic spikes and cache efficiency
 - Sends rich Slack alerts with historical trends, performance impact, and improvement tips
 - Integrates with Pantheon’s Terminus CLI
 - Easy configuration via YAML and environment variables
 
-## Requirements
+## 🛠️ Requirements
 
 - Python 3.7+
 - [Terminus CLI](https://pantheon.io/docs/terminus)
@@ -22,7 +22,7 @@
 - pyyaml
 - python-dotenv
 
-## Setup
+## ⌨️ Setup
 
 1. **Clone the repository**
 2. **Install dependencies**
@@ -43,7 +43,7 @@ terminus auth:login
 ```
 
 If not in your PATH, set the TERMINUS_COMMAND environment variable to the full path. But this script will look for this on initial script run
-## Usage
+## 👨🏽‍💻Usage
 Run the script to check weekly metrics:
 
 ```bash
@@ -55,7 +55,7 @@ Or for daily metrics:
 python metricsmonitoring.py --day
 ```
 
-## Alerts
+## 🚨 Alerts
 Slack alerts include:
 
 - Site name and environment
