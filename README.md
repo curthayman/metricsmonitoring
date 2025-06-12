@@ -13,7 +13,7 @@
 
 - Python 3.7+
 - [Terminus CLI](https://pantheon.io/docs/terminus)
-- Slack webhook URL
+- [Slack webhook URL](https://api.slack.com/messaging/webhooks)
 
 **Python dependencies** (install with `pip install -r requirements.txt`):
 
@@ -30,14 +30,14 @@
    pip install -r requirements.txt
 
 ## Configure environment variables
-Create a **.env** file with your Slack webhook URL:
+Create a **.env** file with your Slack webhook URL. There is an example file for this as well, called (_.env.example_):
 
 **SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...**
 
 ## Configure monitored sites
 - Edit **sites.yaml** to list your Pantheon site names and thresholds.
 
-Should look like this when you setup your sites.yaml file:
+Should look like this when you setup your sites.yaml file, I have also inlucded an example file as well. (_example.sites.yaml_):
 ```bash
 threshold_percent: 25
 sites_to_monitor:
@@ -69,6 +69,14 @@ When you run this script, it will create a metricsmonitoring.log file that you c
 TERMINUS_COMMAND=/usr/local/bin/terminus
 ```
 You may need to adjust that to your path if you running crons
+
+Included in this repo is a **.env.example** file and a **example.sites.yaml** file. Just rename the **.env.example** file to **.env** and the **example.sites.yaml** file to **sites.yaml** and put your own Webhook and sites in.
+
+Make sure you are running a virtual enviroment to run commands like (`pip install -r requirements.txt`). You can run this command if you are on any Linux based platform:
+
+```bash
+python3 -m venv venv && source venv/bin/activate'
+```
 
 ## 🚨 Alerts
 Slack alerts include:
