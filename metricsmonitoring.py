@@ -189,11 +189,11 @@ def monitor_sites(period="week"):
 
                 # Cache hit ratio alert (Block Kit with advanced details)
                 avg_ratio = df["Cache Hit Ratio"].mean() if not df.empty else 0
-                if avg_ratio < 70:
+                if avg_ratio < 50:
                     # Visual indicator
                     if avg_ratio >= 80:
                         indicator = "🟢"
-                    elif avg_ratio >= 70:
+                    elif avg_ratio >= 50:
                         indicator = "🟡"
                     else:
                         indicator = "🔴"
@@ -216,7 +216,7 @@ def monitor_sites(period="week"):
                         {"type": "section", "fields": [
                             {"type": "mrkdwn", "text": f"*Site:*\n{site_name} ({ENV})"},
                             {"type": "mrkdwn", "text": f"*Average Cache Hit Ratio:*\n{avg_ratio:.2f}%"},
-                            {"type": "mrkdwn", "text": "*Threshold:*\n70%"},
+                            {"type": "mrkdwn", "text": "*Threshold:*\n50%"},
                             {"type": "mrkdwn", "text": f"*Origin Requests:*\n{impact_text}"},
                         ]},
                         {"type": "section", "text": {"type": "mrkdwn", "text": f"*Recent Cache Hit Ratios:*\n{trend_text}"}},
