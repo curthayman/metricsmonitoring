@@ -1,3 +1,4 @@
 .env
 metricsmonitoring.log
-sites.yaml.idea/
+sites.yaml
+.idea/
