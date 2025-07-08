@@ -2,3 +2,5 @@ pandas
 requests
 pyyaml
 python-dotenv
+matplotlib
+pillow
