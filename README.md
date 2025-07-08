@@ -95,3 +95,5 @@ Slack alerts include:
 - requests
 - pyyaml
 - python-dotenv
+- matplotlib
+- pillow
