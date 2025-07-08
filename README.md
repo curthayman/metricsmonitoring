@@ -21,6 +21,8 @@
 - requests
 - pyyaml
 - python-dotenv
+- matplotlib
+- pillow
 
 ## ⌨️ Setup
 
